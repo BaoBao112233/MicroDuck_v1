@@ -1,0 +1,18 @@
+{
+  "upstream_commit": "dfff97c42331f97497050a5558e650bde41bf54d",
+  "links": 17,
+  "actuated_joints": 8,
+  "joint_names": [
+    "lb_joint1",
+    "lb_joint2",
+    "rb_joint1",
+    "rb_joint2",
+    "rf_joint1",
+    "rf_joint2",
+    "lf_joint1",
+    "lf_joint2"
+  ],
+  "unique_meshes": 11,
+  "all_meshes_exist": true,
+  "scope": "Official URDF/resource validation, not vendor gait validation"
+}
