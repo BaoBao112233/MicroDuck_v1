@@ -4,6 +4,11 @@
 
 Workspace này tập trung duy nhất vào MicroDuck. MVP hiện dùng mock hardware/dry-run, không gửi lệnh tới robot thật và không cần cài thư viện ngoài.
 
+Tài liệu chính:
+
+- [`docs/MICRODUCK_REFERENCE.md`](docs/MICRODUCK_REFERENCE.md): tổng hợp 7 nguồn, baseline phần cứng/phần mềm, Servo ID và safety gates.
+- [`docs/ROADMAP_5_WEEKS.md`](docs/ROADMAP_5_WEEKS.md): kế hoạch 5 tuần và Definition of Done cho thứ Ba 2026-10-06.
+
 Python đi kèm Codex trên máy này có thể chạy các lệnh sau:
 
 ```powershell
@@ -22,6 +27,14 @@ Chạy toàn bộ demo bằng một lệnh:
 ```powershell
 .\scripts\demo-microduck.ps1
 ```
+
+## Giao diện 3D
+
+```powershell
+npm start
+```
+
+Mở `http://127.0.0.1:8765`. Giao diện hiển thị MicroDuck hai chân với 14 khớp, telemetry mô phỏng, neutral pose, motion demo và emergency stop. Kéo để xoay, cuộn để zoom và double-click để reset góc nhìn.
 
 Cấu hình ở `config/robot.yaml`. File này dùng cú pháp JSON, đồng thời là YAML hợp lệ, để runtime có thể đọc bằng thư viện chuẩn. Servo ID, giới hạn khớp và IMU orientation hiện là cấu hình khởi tạo để kiểm thử software; phải đối chiếu đúng revision phần cứng trước khi dùng trên robot thật.
 
